@@ -4,9 +4,8 @@
 .header {
   position: sticky;
   position: -webkit-sticky;
-  margin-top: 50px;
   top: 0px;
-  padding: 0px 15% 0px 7%;
+  padding: 0px 20% 0px 10%;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 1px; }
@@ -15,15 +14,67 @@
   font-size: 1rem;
   font-weight: 700; }
 
+.main-icon {
+  padding: 0px 2%; }
+
 .items li {
-  padding: 8px 2%; }
+  padding: 7px 2%; }
 
 .items li:hover {
-  background: orange; }
+  background: #FD735A;
+  transition: background-color 0.8s; }
 
 .last {
   padding-right: 30px; }
 
 .homepage {
   height: 2000px;
-  background-color: violet; }
+  background-color: white; }
+
+.first-interface {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://www.beingeorge.com/xcent-jekyll/assets/images/home2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.first-interface img {
+  position: absolute;
+  height: 218px;
+  width: 216px;
+  top: 33%;
+  right: 65%; }
+
+.intro-content {
+  position: absolute; }
+
+.text {
+  width: 60%;
+  color: white;
+  top: 40%;
+  left: 21%;
+  position: absolute;
+  display: block; }
+
+.text div {
+  font-size: 18px; }
+
+.text h1 {
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 15px 0px; }
+
+.opacityy {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(250, 68, 98, 0.5);
+  z-index: 2; }
+
+.mouse {
+  height: 50px;
+  width: 30px;
+  border: solid #c8c8c8 1.5px;
+  position: absolute;
+  border-radius: 15px;
+  bottom: 55px;
+  left: 49%; }
