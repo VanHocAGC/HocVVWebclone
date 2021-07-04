@@ -1,0 +1,33 @@
+{
+  "name": "webclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch":"node-sass src/resources/scss/app.scss src/public/css/app.css",
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanHocAGC/Webclone.git"
+  },
+  "keywords": [
+    "clone"
+  ],
+  "author": "HocAGC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanHocAGC/Webclone/issues"
+  },
+  "homepage": "https://github.com/VanHocAGC/Webclone#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.9"
+  }
+}
