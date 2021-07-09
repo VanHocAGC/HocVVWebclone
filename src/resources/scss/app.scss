@@ -235,105 +235,207 @@ section {
   padding: 0px;
   height: auto;
 }
-.about-image{
-  background-image: url('/IMG/about.jpg');
+.about-image {
+  background-image: url("/IMG/about.jpg");
   background-size: 100% auto;
   background-position: center;
-  height:500px;
+  height: 500px;
 }
-.aboutme-list{
+.aboutme-list {
   display: flex;
   flex-wrap: wrap;
 }
-.aboutme-item{
-  width:40%;
+.aboutme-item {
+  width: 40%;
   padding-left: 10%;
   position: relative;
-  margin:0% 0% 8% 10%;
+  margin: 0% 0% 8% 10%;
 }
-.about-icon{
+.about-icon {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 30px;
   color: #fd735a;
 }
-h6{
-  font-size:0.8rem;
-  letter-spacing:1px;
+h6 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
   font-weight: 700;
   color: #666;
 }
-.aboutme-item p{
-  font-size:0.8rem;
+.aboutme-item p {
+  font-size: 0.8rem;
   color: #666;
 }
 
-
-.testimony-box{
+.testimony-box {
   background-color: #f5f5f5;
   text-align: center;
 }
-.testimony-icon{
-  height:80px;
-  width:80px;
-  border-radius:40px;
+.testimony-icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
   position: relative;
-  margin:0px 0px 50px 44%;
+  margin: 0px 0px 50px 44%;
   box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.22),
     0 6px 20px 0 rgba(150, 150, 150, 0.22);
 }
-.testimony-icon i{
-  font-size:32px;
+.testimony-icon i {
+  font-size: 32px;
   color: #fd735a;
-  position:absolute;
+  position: absolute;
   top: 30%;
   right: 30%;
 }
-.testimony-container{
-  display:flex;
+.testimony-container {
+  display: flex;
 }
-.testimony-item{
+.testimony-item {
   text-align: center;
 }
-.testimony-content{
-  font-size:0.8rem;
+.testimony-content {
+  font-size: 0.8rem;
   color: #666;
-  letter-spacing:1px;
+  letter-spacing: 1px;
 }
-.testimony-content p,span{
-  margin:10px 10%;
+.testimony-content p,
+span {
+  margin: 10px 10%;
 }
-.testimony-content span{
+.testimony-content span {
   font-weight: 600;
   margin-top: 50px;
 }
-.change-tag{
+.change-tag {
   list-style-type: none;
-  display:flex;
-  justify-content:center;
-  margin:30px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 40px 0px;
   padding: 0px;
 }
-.change-tag li{
+.change-tag li {
   background-color: #fd735a;
-  height:5px;
-  width:3%;
+  height: 5px;
+  width: 3%;
   border-radius: 2.5px;
-  margin:0px 5px;
+  margin: 0px 5px;
 }
 
-
-.blog-list{
+.blog-list {
   display: flex;
+  justify-content: space-evenly;
 }
-.blog-item{
-  width:100%;
-  height:auto;
+.blog-item {
+  width: 95%;
+  height: auto;
+  transform: translateY(0px);
+  transition: transform 0.5s;
+}
+.blog-item:hover {
+  transform: translateY(-8px);
+  transition: transform 0.5s;
+}
+.blog-image {
+  position: relative;
+  height: 240px;
+  text-align: center;
+}
+.blog-image img {
+  width: 95%;
+  height: 100%;
+}
+.blog-image p {
+  position: absolute;
+  bottom: -3%;
+  right: 6%;
+  background-color: white;
+  color: #3ab39c;
+  border-radius: 2px;
+  padding: 4px 9px;
+  font-size: 0.8rem;
 }
 
+.blog-image p:hover {
+  background-color: #fd735a;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+.blog-content {
+  width: 95%;
+  text-align: left;
+  padding: 5%;
+  margin-left: 2.5%;
+  box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.4),
+    0 6px 20px 0 rgba(210, 210, 210, 0.4);
+  color: #666;
+  font-size: 0.75rem;
+  word-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 10px 0px;
+}
+
+.input-box{
+  padding: 0px;
+  color: #666;
+  font-size:0.8rem;
+}
+// .form-group{
+//   margin:5px 0px;
+// }
+.btn{
+  background-color: #fd735a;
+  font-size: 0.7rem;
+  color: white;
+  letter-spacing:1px; 
+  margin:5px 0px;
+}
+form{
+  width:100%;
+}
 
 .footer {
   position: relative;
   bottom: 0;
+  height:150px;
+  background-color:#333;
+  color: white;
 }
+.footer-list{
+  display: flex;
+  list-style-type: none;
+  justify-content:center;
+  color:white;
+  padding:0px;
+}
+.footer-list li{
+  margin: 50px 10px 0px 10px;
+ 
+}
+.footer-list li a div{
+  height:30px;
+  width:30px;
+  border: solid 1px white;
+  font-size: 0.8rem;
+  border-radius:15px;
+  position: relative;
+}
+.footer-list li a div i{
+  position:absolute;
+  top: 10px;
+  right:35%;
+  color:#ddd;
+}
+.footer-h1{
+  font-size:0.7rem;
+  text-align: center;
+  color:#ddd;
+}
+
