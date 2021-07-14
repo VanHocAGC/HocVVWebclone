@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xcent-Jekyll</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Xcent-Jekyll</title><link rel="stylesheet" href="#https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">   
-    <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-</head>
-<body>
-    <div class="first-interface">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="/css/app.css"> 
+    <link rel="stylesheet" href="/AOS/aos.css"> 
+</head> 
+<body  data-spy="scroll" data-target="#navbar-scroll" data-offset="200" class="scrollspy-example" style="position: relative">
+    <section id="home"></section>
+    <div id="" class="first-interface">
         <div class="text">
             <div class="intro-content"> <div>Hello, my name is Alice Joseph and</div>
             <h1>I AM A FRONT-END DEVELOPER</h1>
             <div>creating modern and responsive design for Web and Mobile</div></div>
         </div>
-        <img src="https://www.beingeorge.com/xcent-jekyll/assets/images/pattern1.png" alt="day la anh cham">
+        <img src="/IMG/pattern1.png" alt="day la anh cham">
         <div class="overlay"></div>
         <div class="mouse">
             <div class="wheel"></div>
         </div>
     </div>
-    
+
     {{> header}}
+<div class="box"></div>
     
-<div class="box">
-    <section class="module">
+    {{!-- start section --}}
+    <section class="module" id="works">
         <div class="title-item">
             <h1>portfolio</h1>
             <p>my works</p>
@@ -48,54 +53,54 @@
         </ul>
         <div class="list-image">
             <div class="image-item">
-                <a href="">
+                <a href="#">
                     <div class="img-overlay" ></div>
                     <img src="/IMG/p1-1.jpg" alt="abc">
                 </a>
             </div>
             <div class="image-item">
-                <a href="">
+                <a href="#">
                     <div class="img-overlay"></div>
                     <img src="/IMG/p2-2.jpg" alt="abc">
                 </a>
             </div>
             <div class="image-item">
-                <a href="">
+                <a href="#">
                     <div class="img-overlay"></div>                    
                     <img src="/IMG/p3-3.jpg" alt="abc">
                 </a>
             </div>
             <div class="image-item">
-                <a href="">
+                <a href="#">
                     <div class="img-overlay"></div>                   
                     <img src="/IMG/p4-4.jpg" alt="abc">
                 </a>
             </div>
             <div class="image-item">
-                <a href="">
+                <a href="#">
                     <div class="img-overlay"></div>
                     <img src="/IMG/p5-5.jpg" alt="abc">
                 </a>
             </div>
             <div class="image-item">
-                <a href="">
+                <a href="#">
                     <div class="img-overlay"></div>
                     <img src="/IMG/p6-6.jpg" alt="abc">
                 </a>
             </div>
         </div>
     </section>
-    
-
-    <section class="module service-box">
+    {{!-- end section --}}
+    {{!-- start section --}}
+    <section class="module service-box" id="service">
         <div class="container">
             <div class="title-item">
                 <h1>services</h1>
                 <p>my services</p>
                 <div class="module-line"></div>
             </div>
-            <div class="services">
-                <div class="service-item col-sm-4">
+            <div class="services" >
+                <div class="service-item col-sm-4" data-aos="fade-up" data-aos-duration="650" data-aos-offset="200">
                     <div class="service-icon"><i class="fas fa-desktop"></i></div>
                     <div class="description">
                         <div>WEB DESIGN</div>
@@ -104,7 +109,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service-item col-sm-4">
+                <div class="service-item col-sm-4" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
                     <div class="service-icon"><i class="fas fa-code"></i></div>
                     <div class="description">
                         <div>WEB DEVELOPMENT</div>
@@ -113,7 +118,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service-item col-sm-4">
+                <div class="service-item col-sm-4" data-aos="fade-up" data-aos-duration="750" data-aos-offset="200">
                     <div class="service-icon"><i class="fab fa-sketch"></i></div>
                     <div class="description">
                         <div>LOGO DESIGN</div>
@@ -122,7 +127,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service-item col-sm-4">
+                <div class="service-item col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
                     <div class="service-icon"><i class="far fa-comments"></i></div>
                     <div class="description">
                         <div>MAKETING</div>
@@ -131,7 +136,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service-item col-sm-4">
+                <div class="service-item col-sm-4" data-aos="fade-up" data-aos-duration="850" data-aos-offset="200">
                     <div class="service-icon"><i class="fas fa-palette"></i></div>
                     <div class="description">
                         <div>DESIGN</div>
@@ -140,7 +145,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service-item col-sm-4">
+                <div class="service-item col-sm-4" data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
                     <div class="service-icon"><i class="fas fa-rocket"></i></div>
                     <div class="description">
                         <div>BRANDING</div>
@@ -152,32 +157,34 @@
             </div>
         </div>
     </section>
-
-    <section class="module about-box row">
+    {{!-- end section --}}
+    {{!-- start section --}}
+    <section class="module about-box row" id="about">
         <div class="about-image col-md-6"></div>
         <div class="about-content col-md-6">
             <div class="title-item">
                 <h1>about</h1>
                 <p>about me</p>
+                <h6>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</h6>
                 <div class="module-line" style="width:8%"></div>
             </div>
-            <div class="aboutme-list">
-                <div class="aboutme-item">
+            <div class="aboutme-list"  >
+                <div class="aboutme-item" data-aos="fade-up" data-aos-duration="650" data-aos-offset="200">
                     <h6>PHOTOGRAPHER</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
                     <div class="about-icon"><i class="fas fa-camera-retro"></i></div>
                 </div>
-                <div class="aboutme-item">
+                <div class="aboutme-item" data-aos="fade-up" data-aos-duration="650" data-aos-offset="200">
                     <h6>PHOTOGRAPHER</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
                     <div class="about-icon"><i class="fas fa-headphones-alt"></i></div>
                 </div>
-                <div class="aboutme-item">
+                <div class="aboutme-item" data-aos="fade-up" data-aos-duration="650" data-aos-offset="200">
                     <h6>PHOTOGRAPHER</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
                     <div class="about-icon"><i class="fas fa-paint-brush"></i></div>
                 </div>
-                <div class="aboutme-item">
+                <div class="aboutme-item" data-aos="fade-up" data-aos-duration="650" data-aos-offset="200">
                     <h6>PHOTOGRAPHER</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
                     <div class="about-icon"><i class="fas fa-hat-wizard"></i></div>
@@ -185,7 +192,9 @@
             </div>
         </div>
     </section>
-    <section class="module testimony-box contain">
+    {{!-- end section --}}
+    {{!-- start section --}}
+    <section class="module testimony-box contain" id="testimony">
         <div class="title-item">
             <h1>testimony</h1>
             <p>testimony</p>
@@ -195,32 +204,43 @@
             <div class="col-sm-2"></div>
             <div class="testimony-item col-sm-8">
                 <div class="testimony-icon"><i class="fas fa-quote-left"></i></div>
-                <div class="testimony-content">
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. 
-                        Nesciunt tofu stumptown aliqua, retro synth master cleanse. 
-                        Mustache cliche tempor, williamsburg carles vegan helvetica.
-                    </p>
-                    <span>Jon Doe, Web Developer</span>
+                <div id="autoplay">
+                    <div class="testimony-content">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. 
+                            Nesciunt tofu stumptown aliqua, retro synth master cleanse. 
+                            Mustache cliche tempor, williamsburg carles vegan helvetica.
+                        </p>
+                        <span>Jon Doe, Web Developer1</span>
+                    </div>
+                    <div class="testimony-content">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. 
+                            Nesciunt tofu stumptown aliqua, retro synth master cleanse. 
+                            Mustache cliche tempor, williamsburg carles vegan helvetica.
+                        </p>
+                        <span>Jon Doe, Web Developer2</span>
+                    </div>
+                    <div class="testimony-content">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. 
+                            Nesciunt tofu stumptown aliqua, retro synth master cleanse. 
+                            Mustache cliche tempor, williamsburg carles vegan helvetica.
+                        </p>
+                        <span>Jon Doe, Web Developer3</span>
+                    </div>
                 </div>
-                <ul class="change-tag">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </div>
     </section>
-
-
-    <section class="module blog-box">
+    {{!-- end section --}}
+    {{!-- start section --}}
+    <section class="module blog-box" id="blog">
         <div class="title-item">
             <h1>articles</h1>
             <p>blog</p>
             <div class="module-line"></div>
         </div>
         <div class="container blog-list">
-            <div class="blog-item col-sm-4">
-                <a href="" style="text-decoration:none">
+            <div class="blog-item col-sm-4" data-aos="fade-up" data-aos-duration="650" data-aos-offset="-100">
+                <a href="#" style="text-decoration:none">
                     <div class="blog-image">
                         <p>Passion</p>
                         <img src="/IMG/blog1.jpg" alt="">
@@ -233,8 +253,8 @@
                     </div>
                 </a>
             </div>
-            <div class="blog-item col-sm-4">
-                <a href="" style="text-decoration:none">
+            <div class="blog-item col-sm-4" data-aos="fade-up" data-aos-duration="650" data-aos-offset="-100">
+                <a href="#" style="text-decoration:none">
                     <div class="blog-image">
                         <p>Passion</p>
                         <img src="/IMG/blog2.jpg" alt="">
@@ -247,8 +267,8 @@
                     </div>
                 </a>
             </div>
-            <div class="blog-item col-sm-4">
-                <a href="" style="text-decoration:none">
+            <div class="blog-item col-sm-4" data-aos="fade-up" data-aos-duration="650" data-aos-offset="-100">
+                <a href="#" style="text-decoration:none">
                     <div class="blog-image">
                         <p>Passion</p>
                         <img src="/IMG/blog3.jpg" alt="">
@@ -263,10 +283,9 @@
             </div>
         </div>
     </section>
-
-
-
-    <section class="module">
+    {{!-- end section --}}
+    {{!-- start section --}}
+    <section class="module" id="contact">
         <div class="title-item">
             <h1>contact</h1>
             <p>contact</p>
@@ -274,33 +293,40 @@
         </div>
         <div class="container">
             <form>
-            <div class="form-group row justify-content-sm-center">
+            <div class="form-group row justify-content-sm-center" data-aos="fade-up" data-aos-duration="650" data-aos-offset="100">
                 <div class="col-sm-6 input-box">
                 <input style="font-size:0.8rem" type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Name">
                 </div>
             </div>
-            <div class="form-group row justify-content-sm-center">
+            <div class="form-group row justify-content-sm-center" data-aos="fade-up" data-aos-duration="650" data-aos-offset="100">
                 <div class="col-sm-6 input-box">
                 <input style="font-size:0.8rem" type="email" class="form-control" id="colFormLabel" placeholder="E-mail">
                 </div>
             </div>
-            <div class="form-group row justify-content-sm-center">
+            <div class="form-group row justify-content-sm-center" data-aos="fade-up" data-aos-duration="650" data-aos-offset="100">
                 <div class="col-sm-6 input-box">
                 <textarea style="font-size:0.8rem" rows="7" type="email" class="form-control" id="colFormLabelLg" placeholder="Your message"></textarea>
                 </div>
             </div>
-            <div class="row justify-content-sm-center">
+            <div class="row justify-content-sm-center" data-aos="fade-up" data-aos-duration="650" data-aos-offset="100">
                 <button type="submit" class="btn btn-sm col-sm-6">SEND MESSAGE</button>
             </div>   
         </form>
         </div>
-        
     </section>
+    {{!-- end section --}}
 </div>
     {{{body}}}
     {{> footer}}
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js" ></script>
+    <script type="text/javascript" src="AOS/aos.js" ></script>
+    <script type="text/javascript" src="css/main.js" ></script>
+    <script>
+        AOS.init({})
+    </script>
 </body>
 </html>

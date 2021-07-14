@@ -6,30 +6,40 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
-  padding: 0px 20% 0px 10%;
+  padding: 0px 15% 0px 10%;
   text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
   z-index: 1000; }
 
 .navbar-brand {
-  font-size: 1rem;
-  font-weight: 700; }
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white; }
 
-.main-icon {
-  padding: 0px 2%;
-  color: #999; }
+.header-list li {
+  height: 50px;
+  width: 100%;
+  text-align: center; }
 
-.items li {
-  padding: 7px 2%; }
+.header-list {
+  margin-left: 10%;
+  width: 60%; }
 
-.items li:hover {
+.header-list li:hover {
   background: #fd735a;
   color: white;
   transition: background-color 0.8s, color 0.8s; }
 
+.header-list li a {
+  padding: 15px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.7rem; }
+
+.header-list li a:hover {
+  color: white; }
+
 .last {
-  padding-right: 30px; }
+  margin-right: 30px; }
 
 .first-interface {
   height: 100vh;
@@ -79,6 +89,28 @@
   bottom: 55px;
   left: 49%; }
 
+.wheel {
+  position: absolute;
+  height: 10px;
+  width: 4px;
+  border-radius: 2px;
+  background: #bbb;
+  left: 42%;
+  top: 20%;
+  animation-name: wheelExm;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite; }
+
+@keyframes wheelExm {
+  from {
+    top: 20%;
+    left: 42%;
+    opacity: 0.8; }
+  to {
+    top: 70%;
+    left: 42%;
+    opacity: 0; } }
+
 .title-item {
   text-align: center;
   position: relative;
@@ -96,6 +128,12 @@
   font-size: 6rem;
   color: rgba(200, 200, 200, 0.2);
   font-weight: 800; }
+
+@media screen and (max-width: 600px) {
+  .title-item h1 {
+    font-size: 2rem;
+    color: rgba(200, 200, 200, 0.2);
+    font-weight: 800; } }
 
 .box {
   position: relative;
@@ -160,7 +198,8 @@ section {
   transition: transform 0.3s; }
 
 .image-item a img {
-  width: 100%; }
+  width: 100%;
+  min-width: 300px; }
 
 .service-box {
   background-color: #f5f5f5; }
@@ -290,19 +329,36 @@ span {
   font-weight: 600;
   margin-top: 50px; }
 
-.change-tag {
+.dot-class {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin: 30px 0px 40px 0px;
   padding: 0px; }
 
-.change-tag li {
-  background-color: #fd735a;
-  height: 5px;
-  width: 3%;
-  border-radius: 2.5px;
-  margin: 0px 5px; }
+.dot-class li button {
+  font-size: 0px;
+  border: none;
+  display: none; }
+
+.dot-class li {
+  font-size: 0px;
+  border: none;
+  background-color: #ddd;
+  height: 7px;
+  width: 7px;
+  border-radius: 5px;
+  margin: 5px 3px;
+  transition: width 0.5s, background-color 0.5s; }
+
+.dot-class .slick-active {
+  width: 20px;
+  background-color: #fd735a; }
+
+.dot-class li:hover {
+  transition: width 0.5s, background-color 0.5s;
+  width: 20px;
+  background-color: #fd735a; }
 
 .blog-list {
   display: flex;
@@ -409,3 +465,9 @@ form {
   font-size: 0.7rem;
   text-align: center;
   color: #ddd; }
+
+.navbar-nav .active {
+  background-color: #fd735a;
+  color: white;
+  height: 100%;
+  transition: background-color 2s, color 0.5s; }
