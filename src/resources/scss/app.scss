@@ -1,16 +1,19 @@
-$body-color:#fd735a;
 
 * {
   box-sizing: border-box;
-  font-family: roboto, arial, helvetica;
+  font-family: Roboto, arial, helvetica;
 }
 .header {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
-  padding: 0px 15% 0px 10%;
+  padding: 0px 10% 0px 10%;
   text-transform: uppercase;
   z-index: 1000;
+}
+.navbar-toggler{
+  border:none;
+
 }
 .navbar-brand {
   font-size: 0.8rem;
@@ -20,7 +23,7 @@ $body-color:#fd735a;
 .header-list li {
   height:50px;
   width:100%;
-  text-align:center;
+  text-align:center;  
 }
 .header-list{
   margin-left: 10%;
@@ -46,43 +49,80 @@ $body-color:#fd735a;
 .first-interface {
   height: 100vh;
   position: relative;
-  background-image: url("/IMG/home2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.first-interface img {
+.first-interface>img {
   position: absolute;
   height: 218px;
   width: 216px;
-  top: 33%;
-  right: 65%;
+  top: 34%;
+  right: 63%;
+  color: #eee;
+  z-index: 10;
+}
+//carousel
+.carousel{
+  position: absolute;
+  top: 0px;
+}
+.carousel img{
+  height:100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-indicators li{
+    width: 8px;
+    height:8px;
+    border-radius:4px;
+    background-color:#f5f5f5;
+}
+.carousel-indicators .active{
+  width:20px;
+}
+
+.carousel-control{
+  height:50px;
+  width:50px;
+  z-index: 123;
+  border:solid 2px white;
+  border-radius:25px;
+  position:absolute;
+  top: 50%;
+
+}
+.carousel-control-prev{
+  left:10px;
+}
+.carousel-control-next{
+  right:10px;
 }
 
 .intro-content {
   position: absolute;
 }
-
 .text {
-  width: 60%;
+  width: 80%;
   color: white;
   top: 40%;
-  left: 21%;
+  left: 25%;
   position: absolute;
   display: block;
+  z-index: 1000;
 }
 .text div {
   font-size: 18px;
+ 
 }
 .text h1 {
   font-weight: 700;
   letter-spacing: 4px;
   padding: 15px 0px;
+  display:inline-block;
 }
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(250, 68, 98, 0.5);
-  z-index: 2;
+  background-image: linear-gradient(to top right,rgba(250,31,85,0.5), rgba(253,115,90,0.5));
+  position:absolute;
 }
 .mouse {
   height: 50px;
@@ -102,7 +142,7 @@ $body-color:#fd735a;
   left: 42%;
   top: 20%;
   animation-name: wheelExm;
-  animation-duration: 1.4s;
+  animation-duration: 1.2s;
   animation-iteration-count: infinite;
 }
 @keyframes wheelExm {
@@ -136,13 +176,7 @@ $body-color:#fd735a;
   color: rgba(200, 200, 200, 0.2);
   font-weight: 800;
 }
-@media screen and (max-width: 600px) {
-  .title-item h1 {
-    font-size: 2rem;
-    color: rgba(200, 200, 200, 0.2);
-    font-weight: 800;
-  }
-}
+
 .box {
   position: relative;
   margin: 0;
@@ -168,11 +202,13 @@ section {
 }
 
 .filter {
-  margin: 40px 0px;
+  margin: 10px 15%;
 }
 .filter li a {
   color: #666;
   padding: 3px 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 .filter li {
   background-color: #eee;
@@ -191,7 +227,6 @@ section {
   width: 100%;
   justify-content: space-around;
 }
-
 .image-item {
   position: relative;
   height: auto;
@@ -204,14 +239,14 @@ section {
   width: 100%;
 }
 .img-overlay:hover {
-  background-color: rgba(212, 87, 93, 0.7);
+  background-image: linear-gradient(to top right,rgba(250,31,85,0.5), rgba(253,115,90,0.5));
   transform: scale(0.93, 0.93);
   transition: transform 0.3s;
 }
 
 .image-item a img {
   width: 100%;
-  min-width: 300px;
+  min-width: 250px;
 }
 
 .service-box {
@@ -232,7 +267,7 @@ section {
   height: 80px;
   width: 80px;
   background-color: white;
-  right: 145px;
+  left: 40%;
   top: -10px;
   border-radius: 40px;
   z-index: 10;
@@ -269,7 +304,7 @@ section {
   margin: 0px;
   color: #666;
 }
-
+//about
 .about-box {
   display: flex;
   padding: 0px;
@@ -279,7 +314,15 @@ section {
   background-image: url("/IMG/about.jpg");
   background-size: 100% auto;
   background-position: center;
-  height: 500px;
+  height: 600px;
+}
+.about-description{
+  font-size:0.7rem;
+  font-style: italic;
+  color:#666;
+  text-transform: none;
+  width:80%;
+  margin:0px 10%;
 }
 .aboutme-list {
   display: flex;
@@ -298,7 +341,7 @@ section {
   font-size: 30px;
   color: #fd735a;
 }
-h6 {
+.aboutme-item h6 {
   font-size: 0.8rem;
   letter-spacing: 1px;
   font-weight: 700;
@@ -388,7 +431,7 @@ span {
   justify-content: space-evenly;
 }
 .blog-item {
-  width: 95%;
+  width: 100%;
   height: auto;
   transform: translateY(0px);
   transition: transform 0.5s;
@@ -403,7 +446,7 @@ span {
   text-align: center;
 }
 .blog-image img {
-  width: 95%;
+  width: 100%;
   height: 100%;
 }
 .blog-image p {
@@ -423,10 +466,9 @@ span {
   transition: background-color 0.5s, color 0.5s;
 }
 .blog-content {
-  width: 95%;
+  width: 100%;
   text-align: left;
   padding: 5%;
-  margin-left: 2.5%;
   box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.4),
     0 6px 20px 0 rgba(210, 210, 210, 0.4);
   color: #666;
@@ -502,4 +544,152 @@ form {
   height:100%;
   transition: background-color 2s, color 0.5s;
 }
+// respond
+@media screen and (max-width: 1024px) {
+  .text {
+    top: 43%;
+    left: 12%;
+  }
+  .first-interface>img {
+    top: 40%;
+    left:10%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .image-item {
+    position: relative;
+    height: auto;
+    width: 48%;
+    margin: 10px 0px;
+  }
+  .service-item {
+    padding: 0px 5px;
+  }
+  .service-icon {
+    left: 75px;
+  }
+  .about-box {
+    display: inline-block;
+    padding: 0px;
+    height: auto;
+    width:100%;
+  }
+  .about-box  .col-md-6{
+    max-width: 100%;
+    padding:0px;
+  }
+  .about-image{
+    height:300px;
+  }
+  .header-list{
+    margin-left: 5%;
+    width:85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text {
+    top: 43%;
+    left: 5%;
+    width:95%;
+  }
+  .first-interface>img {
+    top: 40%;
+    left:5%;
+  }
+  .image-item {
+    width: 100%;
+    margin: 10px;
+  }
+  .services{
+    display:inline-block;
+    height:100%;
+  }
+  .services .col-sm-4{
+    max-width:78%;
+    margin: 50px 10%;
+  }
+  .service-icon {
+    left: 40%;
+    top: -35px;
+  }
+  .service-item {
+    margin:10px 0px;
+  }
+  .aboutme-item {
+    width: 100%;
+    padding-left: 10%;
+    margin-left:5%;
+  }
+  .blog-list {
+    display: inline;
+  }
+  .blog-list .col-sm-4{
+    min-width:350px;
+    max-width:50%;
+    margin:30px 25% 0% auto;
+  }
+  form .col-sm-6{
+    max-width:100%;
+  }
+  header{
+    padding:0px 10px;
+  }
+  .header-list{
+    width:100%;
+  }
+  .title-item h1 {
+    font-size: 3rem;
+  }
+  .title-item p {
+    margin-top: -55px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title-item h1 {
+    font-size: 2rem;
+  }
+  .title-item p {
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .blog-list .col-sm-4{
+    min-width:300px;
+    max-width:100%;
+    margin:30px 25% 0% auto;
+  }
+  .carousel-control{
+    display:none;
+  }
+  .text {
+    top: 33%;
+    left: 5%;
+  }
+  .first-interface>img {
+    top: 40%;
+    left:5%;
+  }
+  .mouse {
+    bottom: 55px;
+    left: 45%;
+  }
+  .filter li {
+    margin-top:10px;
+  }
+  .service-icon{
+      left: 35%;
+  }
+  .services .col-sm-4{
+    max-width:90%;
+    margin: 50px 5%;
+  }
+  .testimony-container .col-sm-2{
+    display:none;
+  }
+  .testimony-icon{
+    margin: 0px 0px 50px 35%;
+  }
+
+}
+
 
