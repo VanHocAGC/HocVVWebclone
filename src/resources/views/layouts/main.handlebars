@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xcent-Jekyll</title><link rel="stylesheet" href="#https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">   
+    <title>Xcent-Jekyll</title>
+    <link rel="stylesheet" href="#https://fonts.googleapis.com/css?family=Sofia"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
-    <link rel="stylesheet" href="/AOS/aos.css"> 
-    <link rel="stylesheet" href="/css/app.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/AOS/aos.css"/> 
+    <link rel="stylesheet" href="/css/app.css"/> 
 </head> 
-<body  data-spy="scroll" data-target="#navbar-scroll" data-offset="200" class="scrollspy-example" style="position: relative">
+<body  data-spy="scroll" data-target="#navbar-scroll" data-offset="200" class="scrollspy-example " style="position: relative">
+    <div class="load"></div>
     <section id="home"></section>
     <div id="" class="first-interface">
         <div class="text">
-            <div class="intro-content"> <div>Hello, my name is Alice Joseph and</div>
-            <h1>I AM A FRONT-END DEVELOPER</h1>
-            <div>creating modern and responsive design for Web and Mobile</div></div>
+            <div class="intro-content"> 
+                <div>Hello, my name is Alice Joseph and</div>
+                <h1>I AM A FRONT-END DEVELOPER</h1>
+                <div>creating modern and responsive design for Web and Mobile</div>
+            </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -52,11 +58,10 @@
             <div class="wheel"></div>
         </div>
     </div>
-
     {{> header}}
-    <div class="box"></div>
+    <div class="box">
         
-        {{!-- start section --}}
+        {{!-- start work section --}}
         <section class="module" id="works">
             <div class="title-item">
                 <h1>portfolio</h1>
@@ -65,50 +70,50 @@
             </div>
             <ul class="nav justify-content-center filter mt-4">
                 <li class="nav-item ml-2 mr-2 ">
-                    <a class="nav-link" href="#">All</a>
+                    <a class="nav-link active" href="#works">All</a>
                 </li>
                 <li class="nav-item ml-2 mr-2">
-                    <a class="nav-link" href="#">Slideshow</a>
+                    <a class="nav-link" href="#works">Slideshow</a>
                 </li>
                 <li class="nav-item ml-2 mr-2">
-                    <a class="nav-link" href="#">video</a>
+                    <a class="nav-link" href="#works">Video</a>
                 </li>
                 <li class="nav-item ml-2 mr-2">
-                    <a class="nav-link" href="#">image</a>
+                    <a class="nav-link" href="#works">Image</a>
                 </li>
             </ul>
-            <div class="list-image">
-                <div class="image-item">
+            <div class="list-image ">
+                <div class="image-item All Slideshow">
                     <a href="#">
                         <div class="img-overlay" ></div>
                         <img src="/IMG/p1-1.jpg" alt="abc">
                     </a>
                 </div>
-                <div class="image-item">
+                <div class="image-item All Video">
                     <a href="#">
                         <div class="img-overlay"></div>
                         <img src="/IMG/p2-2.jpg" alt="abc">
                     </a>
                 </div>
-                <div class="image-item">
+                <div class="image-item All Image">
                     <a href="#">
                         <div class="img-overlay"></div>                    
                         <img src="/IMG/p3-3.jpg" alt="abc">
                     </a>
                 </div>
-                <div class="image-item">
+                <div class="image-item All Slideshow">
                     <a href="#">
                         <div class="img-overlay"></div>                   
                         <img src="/IMG/p4-4.jpg" alt="abc">
                     </a>
                 </div>
-                <div class="image-item">
+                <div class="image-item All Video">
                     <a href="#">
                         <div class="img-overlay"></div>
                         <img src="/IMG/p5-5.jpg" alt="abc">
                     </a>
                 </div>
-                <div class="image-item">
+                <div class="image-item All Image">
                     <a href="#">
                         <div class="img-overlay"></div>
                         <img src="/IMG/p6-6.jpg" alt="abc">
@@ -116,8 +121,8 @@
                 </div>
             </div>
         </section>
-        {{!-- end section --}}
-        {{!-- start section --}}
+        {{!-- end work section --}}
+        {{!-- start service section --}}
         <section class="module service-box" id="service">
             <div class="container">
                 <div class="title-item">
@@ -183,9 +188,9 @@
                 </div>
             </div>
         </section>
-        {{!-- end section --}}
-        {{!-- start section --}}
-        <section class="module about-box row" id="about">
+        {{!-- end service section --}}
+        {{!-- start about section --}}
+        <section class="module about-box row" style="margin: auto;" id="about">
             <div class="about-image col-md-6"></div>
             <div class="about-content col-md-6">
                 <div class="title-item">
@@ -218,8 +223,8 @@
                 </div>
             </div>
         </section>
-        {{!-- end section --}}
-        {{!-- start section --}}
+        {{!-- end about section --}}
+        {{!-- start testimony section --}}
         <section class="module testimony-box contain" id="testimony">
             <div class="title-item">
                 <h1>testimony</h1>
@@ -256,8 +261,8 @@
                 </div>
             </div>
         </section>
-        {{!-- end section --}}
-        {{!-- start section --}}
+        {{!-- end testimony section --}}
+        {{!-- start blog section --}}
         <section class="module blog-box" id="blog">
             <div class="title-item">
                 <h1>articles</h1>
@@ -309,9 +314,10 @@
                 </div>
             </div>
         </section>
-        {{!-- end section --}}
+        {{!-- end blogsection --}}
+        {{!-- map --}}
         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3109237.4611476334!2d106.58429178013168!3d15.782015223420139!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1626258333043!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        {{!-- start section --}}
+        {{!-- start contact section --}}
         <section class="module" id="contact">
             <div class="title-item">
                 <h1>contact</h1>
@@ -335,13 +341,13 @@
                         <textarea style="font-size:0.8rem" rows="7" type="email" class="form-control" id="colFormLabelLg" placeholder="Your message"></textarea>
                         </div>
                     </div>
-                    <div class="row justify-content-sm-center" data-aos="fade-up" data-aos-duration="650" data-aos-offset="100">
+                    <div class="row form-group justify-content-sm-center" data-aos="fade-up" data-aos-duration="650" data-aos-offset="0">
                         <button type="submit" class="btn btn-sm col-sm-6">SEND MESSAGE</button>
                     </div>   
                 </form>
             </div>
         </section>
-        {{!-- end section --}}
+        {{!-- end contact section --}}
     </div>
     {{{body}}}
     {{> footer}}
